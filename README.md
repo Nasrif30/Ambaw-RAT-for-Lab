@@ -1,4 +1,3 @@
-Here is the clean version without the box:
 
 # AMBAW RAT - Educational Lab Demonstration
 
