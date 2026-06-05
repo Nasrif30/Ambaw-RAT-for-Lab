@@ -1,4 +1,5 @@
-```markdown
+Here is the clean version without the box:
+
 # AMBAW RAT - Educational Lab Demonstration
 
 **Ambaw** means **Rat** in the Tausug language.
@@ -37,25 +38,25 @@ This is designed for cybersecurity classrooms to help students understand:
 
 ## HOW TO DOWNLOAD
 
-### Method 1: Clone with Git
+**Method 1: Clone with Git**
 
 ```bash
 git clone https://github.com/yourusername/Ambaw-RAT-Lab-Demo.git
 cd Ambaw-RAT-Lab-Demo
 ```
 
-### Method 2: Direct Download
+**Method 2: Direct Download**
 
 1. Visit https://github.com/yourusername/Ambaw-RAT-Lab-Demo
 2. Click the green "Code" button
 3. Select "Download ZIP"
 4. Extract the ZIP file to your desired location
 
-### Method 3: Manual Copy
+**Method 3: Manual Copy**
 
 Create two files on your system:
-- `ambaw.sh`
-- `ambaw_victim.sh`
+- ambaw.sh
+- ambaw_victim.sh
 
 Copy the contents from this repository into each file.
 
@@ -63,7 +64,7 @@ Copy the contents from this repository into each file.
 
 ## HOW TO RUN
 
-### Step 1: Make Scripts Executable
+**Step 1: Make Scripts Executable**
 
 On WSL (Attacker):
 ```bash
@@ -75,7 +76,7 @@ On Kali VM (Victim):
 chmod +x ambaw_victim.sh
 ```
 
-### Step 2: Configure Port Forwarding in VirtualBox
+**Step 2: Configure Port Forwarding in VirtualBox**
 
 1. Open VirtualBox
 2. Select your Kali VM
@@ -91,7 +92,7 @@ chmod +x ambaw_victim.sh
    - Guest Port: 4444
 7. Click OK
 
-### Step 3: Start the Attacker Listener
+**Step 3: Start the Attacker Listener**
 
 On WSL (Attacker):
 ```bash
@@ -105,7 +106,7 @@ Expected output:
 [+] Waiting for Ambaw (RAT) to connect...
 ```
 
-### Step 4: Run the Victim Script
+**Step 4: Run the Victim Script**
 
 On Kali VM (Victim):
 ```bash
@@ -116,11 +117,11 @@ Expected output:
 ```
 [*] Opening: Confidential_Report_2026.pdf
 [!] SECURITY WARNING: Document contains embedded script
-[ ] AMBAW (RAT) ACTIVATED
+[hahahahhahah] AMBAW (RAT) ACTIVATED
 [+] Connected to remote C2 server
 ```
 
-### Step 5: Verify Connection
+**Step 5: Verify Connection**
 
 On WSL, you should see:
 ```
@@ -195,14 +196,14 @@ The victim only sees a fake PDF loading screen while the attacker runs commands 
 | Ping fails | Ensure VM network is set to NAT mode |
 | Address already in use | Change to a different port number |
 
-### Windows Firewall Rule
+**Windows Firewall Rule**
 
 Run PowerShell as Administrator:
 ```powershell
 New-NetFirewallRule -DisplayName "AmbawRAT" -Direction Inbound -Protocol TCP -LocalPort 4444 -Action Allow
 ```
 
-### Test Connectivity
+**Test Connectivity**
 
 From Kali VM, ping the Windows host:
 ```bash
@@ -252,10 +253,8 @@ To protect against RAT attacks:
 
 0xNightShift
 
-
 ---
 
 ## LICENSE
 
 Educational Use Only. Redistribution and classroom use permitted with proper attribution. Commercial use prohibited.
-```
