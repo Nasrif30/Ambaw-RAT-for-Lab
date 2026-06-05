@@ -250,7 +250,7 @@ To protect against RAT attacks:
 
 ## AUTHOR
 
-0xNightShift
+Alnasrif Haliddin
 
 ---
 
